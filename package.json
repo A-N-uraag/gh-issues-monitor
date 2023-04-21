@@ -1,0 +1,14 @@
+{
+  "name": "gh-issues-monitor",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/cron": "^2.0.1",
+    "@types/marked": "^4.0.8",
+    "bun-types": "^0.5.8"
+  },
+  "dependencies": {
+    "cron": "^2.3.0",
+    "marked": "^4.3.0"
+  }
+}
