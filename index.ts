@@ -39,6 +39,10 @@ const fetchLatestIssues = async function(){
 
     const getReposInOrg = async function(org: String) {
         let resp = await fetch(`https://api.github.com/orgs/${org}/repos?sort=pushed`, {headers: {"Authorization": `Bearer ${process.env.GH_ACCESS_TOKEN}`}});
+        if(!resp.ok) {
+            pageMarkDown += `### Failed to fetch repos under ${org}!\n`;
+            return;
+        }
         let repoEntries: RepoEntry[] = JSON.parse(await resp.text());
         let repoNamesList = repoEntries.map(repoEntry => {
             return repoEntry.name;
