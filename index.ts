@@ -105,14 +105,14 @@ job.start();
 Bun.serve({
     async fetch(req) {
         const url = new URL(req.url);
-        fetchLatestIssues();
         if(url.pathname === "/") {
+            fetchLatestIssues();
             return new Response(Bun.file("./index.html"), {headers: {"content-type": "html"}});
         }
         return new Response(`404!`);
         
     },
-    port: 8080
+    port: 3000
   });
 
 export{}

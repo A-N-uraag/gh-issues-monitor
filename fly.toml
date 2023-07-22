@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for gh-issues-monitor on 2023-07-23T04:14:58+05:30
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "gh-issues-monitor"
+primary_region = "sin"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.3.3",
     "@types/cron": "^2.0.1",
     "@types/marked": "^4.0.8",
     "bun-types": "^0.5.8"
