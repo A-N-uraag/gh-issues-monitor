@@ -1,8 +1,8 @@
 apple/*
 tokio-rs/*
 cloudflare/*
-Expensify/App
 withastro/*
 firecracker-microvm/*
 swc-project/*
 dudykr/stc
+Expensify/App
